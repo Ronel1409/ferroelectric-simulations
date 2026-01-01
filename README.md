@@ -18,3 +18,15 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Usage
+
+Run the simulation script to produce P–E hysteresis and time-domain polarization plots:
+
+```bash
+python polarization_sim.py --E0 1.0 --freq 1.0 --duration 10 --dt 1e-3 --noise 0.02
+```
+
+The script saves `pe_hysteresis.png` and `polarization_time.png` (prefix configurable with `--out`).
+
